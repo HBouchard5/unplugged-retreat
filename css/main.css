@@ -98,6 +98,7 @@ footer {
 
 .content-wrapper {
   border: 1px solid red;
+  width: 90%;
 }
 
 header .content-wrapper {
@@ -105,19 +106,49 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
+#unplugged-logo {
+  text-align: center;
+}
+
+#unplugged-logo img {
+  width: 60%;
+}
+
+.header-divider {
+  width: 100%;
+  border-top: 1px solid lightgrey;
+}
 
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 45%;
+  border: 1px solid blue;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  list-style-type: none;
+  border: 1px solid pink;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .footer-content {
+  border: 1px solid blue;
+  text-align: center;
 }
 
 footer .social-icons {
@@ -130,6 +161,27 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.copyright {
+  width: 100%;
+  border: 1px solid blue;
+  text-align: center;
+}
+
+/*------------ Main content ---------------------*/
+
+aside .content-wrapper {
+  margin-bottom: 50px;
+}
+
+.features {
+  justify-content: center;
+}
+
+.features article {
+  width: 55%;
+  text-align: center;
 }
 
 /*------------ Mobile styles - Main page -------- */
