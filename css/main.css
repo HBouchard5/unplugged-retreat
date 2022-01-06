@@ -114,7 +114,7 @@ header .content-wrapper {
 }
 
 #unplugged-logo img {
-  width: 60%;
+  width: 100%;
   margin: 15px 0;
 }
 
@@ -146,23 +146,26 @@ header nav ul {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
-}
-
-footer .footer-content {
   border: 1px solid blue;
   text-align: center;
 }
 
-footer .social-icons {
+.contact {
+  width: 49%;
+  border: 1px solid orange;
+}
+
+.social {
+  width: 49%;
+  border: 1px solid orange;
+}
+
+.social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  border: 1px solid purple;
 }
 
 .copyright {
@@ -229,8 +232,12 @@ input {
   flex-flow: row wrap;
 }
 
-.features article {
+.feature {
   width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   text-align: center;
 }
 
@@ -432,14 +439,11 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  align-items: baseline;
 }
 
-.contact {
-  flex-basis: 50%;
-}
-
-.social {
-  flex-basis: 50%;
+.contact, .social {
+  width: 49%;
 }
 
 /* ---- Homepage main content --------- */
@@ -485,12 +489,12 @@ input {
   align-content: center;
 }
 
-.features article {
+.feature {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column;
 }
 
 .reviews {
@@ -507,6 +511,7 @@ input {
 
 .reviews h2 {
   margin: 0;
+  width: 100%;
 }
 
 .reviews article {
@@ -574,7 +579,114 @@ input {
 
 @media only screen and (min-width: 1200px) {
   /* Style adjustments for desktop */
+
+/* ------ Header & Footer -------- */
+
+header .content-wrapper {
+  width: 80%;
 }
+
+#unplugged-logo {
+  width: 30%;
+}
+
+header nav {
+  width: 15%;
+}
+
+footer {
+  height: 340px;
+}
+
+footer .content-wrapper {
+  width: 80%;
+}
+
+.footer-content {
+  justify-content: space-between;
+}
+
+.contact, .social {
+  width: 33%;
+}
+
+/* ------- Homepage -------- */
+
+.content-wrapper {
+  width: 80%;
+}
+
+h1 {
+  margin: 50px 0;
+}
+
+aside {
+  height: 260px;
+}
+
+aside .content-wrapper {
+  width: 67%;
+}
+
+.form-description {
+  width: 40%;
+}
+
+.form-fields {
+  width: 40%;
+}
+
+input {
+  height: 40px;
+}
+
+.features {
+  height: 800px;
+}
+
+.feature {
+  width: 33%;
+  border: 1px solid purple;
+}
+
+.feature p {
+  width: 200px;
+}
+
+h2 {
+  margin: 100px 0;
+}
+
+.reviews {
+  height: 620px;
+}
+
+
+/* --------- About --------- */
+
+h2 {
+  margin: 0;
+}
+
+.contact-section {
+  height: 400px;
+}
+
+/* -------- FAQ ------------- */
+
+.faq {
+  height: 550px;
+}
+
+.faq .content-wrapper {
+  width: 80%;
+}
+
+.faq h2 {
+  margin: 15px 0;
+}
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
