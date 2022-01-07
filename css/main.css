@@ -108,21 +108,34 @@ a {
 	color: #e2e3ed;
   text-decoration: none;
 }
- 
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+
+nav li {
+  font-size: 1.125em; 
+  font-weight: bold;
 }
- 
-h3, 
-h4 {
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em; 
+}
+
+h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
 }
  
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+} 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+}
+ 
 p {
-	font-size: 1.125em;
-  line-height: 1.5em;
+	font-size: 0.875em;
+  line-height: 1.125em;
 }
  
 img {
@@ -134,7 +147,7 @@ figure {
 }
  
 address {
- 
+  font-style: normal;
 }
  
 .content-wrapper {
@@ -167,12 +180,7 @@ header .content-wrapper {
 }
 
 #unplugged-logo {
-  text-align: center;
-}
-
-#unplugged-logo img {
-  width: 100%;
-  margin: 15px 0;
+  width: 70%;
 }
 
 .header-divider {
@@ -186,7 +194,6 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 45%;
-  height: 50px;
   border: 1px solid blue;
 }
 
@@ -206,13 +213,22 @@ footer .content-wrapper {
   text-align: center;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  align-items: baseline;
+}
+
+
 .contact {
-  width: 49%;
+  width: 100%;
   border: 1px solid orange;
 }
 
 .social {
-  width: 49%;
+  width: 100%;
   border: 1px solid orange;
 }
 
@@ -240,7 +256,6 @@ p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  height: 500px;
 }
 
 h1 {
@@ -254,22 +269,36 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  height: 330px;
 }
 
 h3 {
   margin: 15px 0;
 }
 
-div .form {
-  margin: 25px 0;
+aside .form {
+  margin-top: 30px;
 }
-
-input {
-  width:100%;
-  margin-bottom: 16px;
-  height: 50px;
-  padding: 0;
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ---- Retreat features ---- */
@@ -316,7 +345,6 @@ h2 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  height: 600px;
 }
 
 
@@ -465,13 +493,11 @@ footer .content-wrapper {
 
 header .content-wrapper {
   width: 85%;
-  height: 100px;
   justify-content: space-between;
 }
 
 #unplugged-logo {
   width: 35%;
-  text-align: left;
 }
 
 header nav {
@@ -482,20 +508,8 @@ header nav {
   display: none;
 }
 
-footer {
-  height: 280px;
-}
-
 footer .content-wrapper {
   width: 85%;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  align-items: baseline;
 }
 
 .contact, .social {
@@ -508,16 +522,8 @@ footer .content-wrapper {
   width: 85%;
 }
 
-.hero-area {
-  height: 600px;
-}
-
 h1 {
   margin: 100px 0;
-}
-
-aside {
-  height: 240px;
 }
 
 aside .content-wrapper {
@@ -541,7 +547,6 @@ input {
 
 
 .features {
-  height: 860px;
   align-content: center;
 }
 
@@ -551,10 +556,6 @@ input {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-}
-
-.reviews {
-  height: 500px;
 }
 
 .reviews .content-wrapper {
@@ -603,10 +604,6 @@ input {
 
 /* ------ About Page --------------- */
 
-.mission {
-  height: 450px;
-}
-
 .mission-content {
   display: flex;
   justify-content: space-between;
@@ -650,10 +647,6 @@ header nav {
   width: 15%;
 }
 
-footer {
-  height: 340px;
-}
-
 footer .content-wrapper {
   width: 80%;
 }
@@ -676,10 +669,6 @@ h1 {
   margin: 50px 0;
 }
 
-aside {
-  height: 260px;
-}
-
 aside .content-wrapper {
   width: 67%;
 }
@@ -690,14 +679,6 @@ aside .content-wrapper {
 
 .form-fields {
   width: 40%;
-}
-
-input {
-  height: 40px;
-}
-
-.features {
-  height: 800px;
 }
 
 .feature {
@@ -713,26 +694,13 @@ h2 {
   margin: 100px 0;
 }
 
-.reviews {
-  height: 620px;
-}
-
-
 /* --------- About --------- */
 
 h2 {
   margin: 0;
 }
 
-.contact-section {
-  height: 400px;
-}
-
 /* -------- FAQ ------------- */
-
-.faq {
-  height: 550px;
-}
 
 .faq .content-wrapper {
   width: 80%;
