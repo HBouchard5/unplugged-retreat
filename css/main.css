@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 
    */
-/* General Styles */
+/* Global Styles */
  
 html {
 	font-size: 16px;
@@ -122,6 +122,7 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: medium;
 }
  
 h3 {
@@ -136,6 +137,7 @@ h4 {
 p {
 	font-size: 0.875em;
   line-height: 1.125em;
+  margin: 0;
 }
  
 img {
@@ -151,7 +153,7 @@ address {
 }
  
 .content-wrapper {
- 
+  border: 1px solid red;
 }
 
 ul {
@@ -166,8 +168,9 @@ footer {
   flex-flow: row wrap;
 }
 
+/* ----------- Homepage ---------- */
+
 .content-wrapper {
-  border: 1px solid red;
   width: 90%;
 }
 
@@ -176,11 +179,11 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
 }
 
 #unplugged-logo {
   width: 70%;
+  margin: 7px 0;
 }
 
 .header-divider {
@@ -195,12 +198,12 @@ header nav {
   flex-flow: row wrap;
   width: 45%;
   border: 1px solid blue;
+  margin: 18px 0;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-between;
-  border: 1px solid pink;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -209,7 +212,6 @@ header nav ul {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
-  border: 1px solid blue;
   text-align: center;
 }
 
@@ -248,10 +250,6 @@ footer .content-wrapper {
 
 /*------------ Main content ---------------------*/
 
-p {
-  margin: 0;
-}
-
 .hero-area {
   display: flex;
   justify-content: center;
@@ -259,7 +257,7 @@ p {
 }
 
 h1 {
-  margin: 50px 0;
+  margin: 55px 0;
 }
 
 /* ---- Sign up form ----- */
@@ -275,8 +273,8 @@ h3 {
   margin: 15px 0;
 }
 
-aside .form {
-  margin-top: 30px;
+aside .content-wrapper {
+  margin: 15px 0;
 }
  
 input[type=text] {
@@ -290,7 +288,7 @@ input[type=text] {
 input[type=button] {
   width: 100%;
   padding: 20px 0;
-  margin-top: 20px;
+  margin: 20px 0;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -331,7 +329,7 @@ input[type=button] {
 }
 
 .feature p {
-  margin-bottom: 58px;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -347,14 +345,33 @@ h2 {
   flex-flow: row wrap;
 }
 
+.reviews .content-wrapper {
+  margin: 40px 0;
+}
+
+.reviews h2 {
+  margin: 15px 0;
+}
 
 /* ------------ Mobile styles - About page ---------- */
+
+h2 {
+  margin: 0;
+}
 
 .mission {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.mission p {
+  margin-top: 15px;
+}
+
+.mission .content-wrapper {
+  margin: 50px 0;
 }
 
 .contact-section {
@@ -364,6 +381,13 @@ h2 {
   flex-flow: row wrap;
 }
 
+.contact-section h4 {
+  margin: 10px 0;
+}
+
+.contact-section .content-wrapper {
+  margin: 50px 0;
+}
 
 /* ------------ Mobile styles - FAQ page ---------- */
 
@@ -379,23 +403,17 @@ h2 {
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0;
 }
 
-.faq-content {
-  margin-bottom: 40px;
-}
-
-.faq-content h4 {
+.faq h4 {
   margin: 15px 0;
 }
 
-.faq h2 {
-  margin: 35px 0;
+.faq-content {
+  margin-top: 35px;
 }
 
-footer .content-wrapper {
-  margin: 30px 0;
-}
 
 
 /* ==========================================================================
@@ -498,6 +516,7 @@ header .content-wrapper {
 
 #unplugged-logo {
   width: 35%;
+  margin: 30px 0;
 }
 
 header nav {
@@ -510,6 +529,7 @@ header nav {
 
 footer .content-wrapper {
   width: 85%;
+  margin: 100px 0;
 }
 
 .contact, .social {
@@ -524,6 +544,11 @@ footer .content-wrapper {
 
 h1 {
   margin: 100px 0;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.25em;
 }
 
 aside .content-wrapper {
@@ -531,6 +556,11 @@ aside .content-wrapper {
   justify-content: space-between;
   align-items: baseline;
   flex-flow: row wrap;
+  margin: 30px 0;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 .form-description {
@@ -541,13 +571,16 @@ aside .content-wrapper {
   width: 45%;
 }
 
-input {
-  height: 40px;
+.features h2 {
+  margin: 15px 0;
 }
-
 
 .features {
   align-content: center;
+}
+
+.features .content-wrapper {
+  margin: 75px 0;
 }
 
 .feature {
@@ -558,12 +591,14 @@ input {
   flex-flow: column;
 }
 
+
 .reviews .content-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
   flex-flow: row wrap;
+  margin: 100px 0;
 }
 
 .reviews h2 {
@@ -592,14 +627,20 @@ input {
   justify-content: space-between;
   align-items: baseline;
   width: 85%;
+  margin: 90px 0;
 }
 
 .faq-content {
   flex-basis: 45%;
+  margin-top: 20px;
 }
 
 .faq h2 {
   width: 100%;
+}
+
+.faq h4 {
+  font-size: 0.875em;
 }
 
 /* ------ About Page --------------- */
@@ -611,12 +652,30 @@ input {
   flex-flow: row wrap;
 }
 
+.mission .content-wrapper {
+  margin: 90px 0;
+}
+
 .mission h2 {
-  margin: 15px 0;
+  margin-bottom: 60px;
 }
 
 .mission p {
   width: 45%;
+}
+
+.contact-section .content-wrapper {
+  margin: 100px 0;
+}
+
+.contact-section h2 {
+  width: 90%;
+}
+
+.contact-section h4 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
 .contact-content {
@@ -641,10 +700,12 @@ header .content-wrapper {
 
 #unplugged-logo {
   width: 30%;
+  margin: 20px 0;
 }
 
 header nav {
   width: 15%;
+  font-size: 1.125em;
 }
 
 footer .content-wrapper {
@@ -667,6 +728,17 @@ footer .content-wrapper {
 
 h1 {
   margin: 50px 0;
+  font-size: 3.75em;
+  width: 90%;
+}
+
+h3 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.375;
 }
 
 aside .content-wrapper {
@@ -691,25 +763,60 @@ aside .content-wrapper {
 }
 
 h2 {
-  margin: 100px 0;
+  font-size: 2.25em;
+  margin: 0;
 }
 
 /* --------- About --------- */
 
 h2 {
+  font-size: 3em;
+}
+
+.mission h2 {
+  margin-bottom: 25px;
+}
+
+.mission p {
   margin: 0;
 }
+
+.contact-section h2 {
+  width: 100%;
+}
+
+.contact-section h4 {
+  font-size: 1.875em;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
 
 /* -------- FAQ ------------- */
 
 .faq .content-wrapper {
   width: 80%;
+  margin: 100px 0;
 }
 
 .faq h2 {
-  margin: 15px 0;
+  margin: 0;
 }
 
+.faq h4 {
+  font-size: 1.125em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.faq p {
+  font-size: 1.125em;
+  line-height: 1.25em;
+}
+
+.faq-content {
+  margin: 0;
+}
 
 
 @media print,
