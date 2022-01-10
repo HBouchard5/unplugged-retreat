@@ -92,11 +92,13 @@ textarea {
  
 html {
 	font-size: 16px;
+  
 }
  
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
  
 ul, 
@@ -145,7 +147,9 @@ img {
 }
  
 figure {
- 
+  padding:0;
+  margin: 0;
+  width: 100%;
 }
  
 address {
@@ -166,6 +170,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 /* ----------- Homepage ---------- */
@@ -254,10 +259,14 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero-area.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 h1 {
-  margin: 55px 0;
+  margin-top: 55px;
+  margin-bottom: 333px;
+  font-weight: medium;
 }
 
 /* ---- Sign up form ----- */
@@ -267,6 +276,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 h3 {
@@ -306,6 +316,8 @@ input[type=button] {
   justify-items: center;
   flex-flow: row wrap;
   justify-content: center;
+  background: url('../img/camping.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features-items {
@@ -343,6 +355,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews .content-wrapper {
@@ -351,6 +364,10 @@ h2 {
 
 .reviews h2 {
   margin: 15px 0;
+}
+
+.review-img {
+  width: 100%;
 }
 
 /* ------------ Mobile styles - About page ---------- */
@@ -364,6 +381,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .mission p {
@@ -379,6 +397,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-section h4 {
@@ -396,6 +415,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -543,7 +563,8 @@ footer .content-wrapper {
 }
 
 h1 {
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 420px;
   font-size: 3em;
 }
 
@@ -591,10 +612,13 @@ h3 {
   flex-flow: column;
 }
 
+.reviews {
+  background-color: #527158;
+}
 
 .reviews .content-wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   flex-flow: row wrap;
@@ -602,7 +626,7 @@ h3 {
 }
 
 .reviews h2 {
-  margin: 0;
+  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -610,16 +634,16 @@ h3 {
   flex-basis: 50%;
 }
 
-.reviews img {
-  flex-basis: 50%;
+.reviews figure {
+  width: 48%;
 }
 
 .reviews h3 {
-  flex-basis: 50%;
+  flex-basis: 48%;
 }
 
 .reviews p {
-  flex-basis: 50%;
+  flex-basis: 48%;
 }
 
 /* ---- FAQ Page ----------------------*/
@@ -727,7 +751,8 @@ footer .content-wrapper {
 }
 
 h1 {
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 430px;
   font-size: 3.75em;
   width: 90%;
 }
