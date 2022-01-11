@@ -704,6 +704,10 @@ h3 {
   width: 45%;
 }
 
+.map figure { 
+  padding-bottom: 45%; 
+}
+
 .contact-section .content-wrapper {
   margin: 100px 0;
 }
@@ -820,6 +824,10 @@ h2 {
 
 .mission p {
   margin: 0;
+}
+
+.map figure { 
+  padding-bottom: 37%; 
 }
 
 .contact-section h2 {
