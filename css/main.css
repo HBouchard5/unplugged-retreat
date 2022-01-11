@@ -253,7 +253,7 @@ footer .content-wrapper {
   text-align: center;
 }
 
-/*------------ Main content ---------------------*/
+/*------------ Mobile Main content ---------------------*/
 
 .hero-area {
   display: flex;
@@ -269,7 +269,7 @@ h1 {
   font-weight: medium;
 }
 
-/* ---- Sign up form ----- */
+/* ---------- Mobile Sign up form --------------------- */
 
 aside {
   display: flex;
@@ -309,7 +309,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/* ---- Retreat features ---- */
+/* ----------- Mobile Retreat features --------------- */
 
 .features {
   display: flex;
@@ -349,7 +349,7 @@ h2 {
 }
 
 
-/* ----- Reviews section ----- */
+/* ------------- Mobile Reviews section ----- */
 
 .reviews {
   display: flex;
@@ -390,6 +390,22 @@ h2 {
 
 .mission .content-wrapper {
   margin: 50px 0;
+}
+
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 .contact-section {
