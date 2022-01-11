@@ -320,6 +320,10 @@ input[type=button] {
   background-size: cover;
 }
 
+.features .content-wrapper {
+  margin: 50px 0;
+}
+
 .features-items {
   display: flex;
   justify-content: center;
@@ -334,14 +338,13 @@ input[type=button] {
   align-items: center;
   flex-flow: column;
   text-align: center;
+  border: 1px solid yellow;
 }
 
-.feature img {
+.features i {
+	font-size: 3.75em;
+  margin-top: 50px;
   margin-bottom: 40px;
-}
-
-.feature p {
-  margin-bottom: 50px;
 }
 
 h2 {
