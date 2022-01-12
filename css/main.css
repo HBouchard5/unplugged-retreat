@@ -125,6 +125,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: medium;
+  margin: 0;
 }
  
 h3 {
@@ -154,10 +155,6 @@ figure {
  
 address {
   font-style: normal;
-}
- 
-.content-wrapper {
-  border: 1px solid red;
 }
 
 ul {
@@ -202,7 +199,6 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 45%;
-  border: 1px solid blue;
   margin: 18px 0;
 }
 
@@ -212,6 +208,7 @@ header nav ul {
   width: 100%;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 footer .content-wrapper {
@@ -237,12 +234,10 @@ footer .content-wrapper {
 .contact {
   width: 100%;
   margin-bottom: 30px;
-  border: 1px solid orange;
 }
 
 .social {
   width: 100%;
-  border: 1px solid orange;
 }
 
 .social-icons {
@@ -250,7 +245,6 @@ footer .content-wrapper {
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  border: 1px solid purple;
 }
 
 .social i {
@@ -265,7 +259,6 @@ footer .content-wrapper {
 
 .copyright {
   width: 100%;
-  border: 1px solid blue;
   text-align: center;
 }
 
@@ -343,7 +336,7 @@ input[type=button] {
 .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-flow: row wrap;
 }
 
@@ -354,7 +347,6 @@ input[type=button] {
   align-items: center;
   flex-flow: column;
   text-align: center;
-  border: 1px solid yellow;
 }
 
 .features i {
@@ -363,8 +355,8 @@ input[type=button] {
   margin-bottom: 40px;
 }
 
-h2 {
-  margin: 50px 0;
+.features h2 {
+  margin-top: 50px;
 }
 
 
@@ -382,7 +374,6 @@ h2 {
 }
 
 .reviews h2 {
-  margin-top: 0;
   margin-bottom: 22px;
 }
 
@@ -400,12 +391,12 @@ h2 {
   background-color: #527158;
 }
 
-.mission p {
-  margin-top: 15px;
-}
-
 .mission .content-wrapper {
   margin: 50px 0;
+}
+
+.mission p {
+  margin-top: 20px;
 }
 
 .map figure {
@@ -584,12 +575,16 @@ footer .content-wrapper {
   margin: 100px 0;
 }
 
+.footer-content {
+  justify-content: space-around;
+}
+
 .footer-content h4 {
   margin-bottom: 40px;
 }
 
 .contact, .social {
-  width: 49%;
+  width: 31%;
 }
 
 .contact {
@@ -712,15 +707,12 @@ h3 {
 }
 
 .mission .content-wrapper {
-  margin: 90px 0;
-}
-
-.mission h2 {
-  margin-bottom: 60px;
+  margin: 100px 0;
 }
 
 .mission p {
   width: 45%;
+  margin-top: 40px;
 }
 
 .map figure { 
@@ -783,6 +775,10 @@ footer .content-wrapper {
   width: 33%;
 }
 
+.social-icons {
+  justify-content: space-around;
+}
+
 /* ------- Homepage -------- */
 
 .content-wrapper {
@@ -819,7 +815,6 @@ aside .content-wrapper {
 
 .feature {
   width: 33%;
-  border: 1px solid purple;
 }
 
 .feature p {
